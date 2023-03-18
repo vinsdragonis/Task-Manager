@@ -52,8 +52,8 @@ const createNewTask = asyncHandler(async (req, res) => {
     }
 });
 
-// @desc Update a note
-// @route PATCH /notes
+// @desc Update a task
+// @route PATCH /tasks
 // @access Private
 const updateTask = asyncHandler(async (req, res) => {
     const {id, user, title, text, completed } = req.body;
